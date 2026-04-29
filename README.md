@@ -1,17 +1,32 @@
-# Customer Churn Prediction with AutoML
+#  Customer Churn Prediction with AutoML
 
-## Overview
+##  Overview
 
-This project predicts customer churn using machine learning and AutoML
-(PyCaret). It demonstrates a full pipeline from data preprocessing to
-model evaluation.
+This project builds a customer churn prediction system using machine
+learning and AutoML (PyCaret). It demonstrates a full pipeline from data
+preprocessing to model evaluation.
 
-## Problem
+------------------------------------------------------------------------
 
-Customer churn prediction helps businesses identify users likely to
-leave and take preventive action.
+##  Problem Statement
 
-## Workflow
+Customer churn prediction helps businesses: - Reduce revenue loss -
+Identify at-risk customers - Improve retention strategies
+
+------------------------------------------------------------------------
+
+##  Dataset
+
+-   Customer demographics
+-   Service usage
+-   Contract details
+-   Payment information
+
+Target: Churn (0 = No, 1 = Yes)
+
+------------------------------------------------------------------------
+
+##  Workflow
 
 1.  Data Cleaning
 2.  Feature Engineering
@@ -21,12 +36,32 @@ leave and take preventive action.
 6.  Model tuning
 7.  Evaluation
 
-## Best Model
+------------------------------------------------------------------------
+
+##  Best Model
 
 Extra Trees Classifier\
 F1 Score: \~0.87
 
-## Tech Stack
+------------------------------------------------------------------------
+
+##  Evaluation
+
+-   Confusion Matrix
+-   ROC Curve
+-   Learning Curve
+
+------------------------------------------------------------------------
+
+##  Trade-offs
+
+-   AutoML: speed vs control
+-   SMOTE: recall vs noise
+-   Extra Trees: performance vs interpretability
+
+------------------------------------------------------------------------
+
+##  Tech Stack
 
 -   Python
 -   Pandas
@@ -34,11 +69,28 @@ F1 Score: \~0.87
 -   Scikit-learn
 -   Imbalanced-learn
 
-## Run
+------------------------------------------------------------------------
 
-pip install -r requirements.txt\
-Run notebook: 1.Customer_Churn_Prediction_with_AutoML.ipynb
+##  How to Run
 
-## Author
+pip install pandas scikit-learn pycaret imbalanced-learn
+category_encoders\
+Open notebook: 1.Customer_Churn_Prediction_with_AutoML.ipynb
 
-Mai Anh Son
+------------------------------------------------------------------------
+
+##  Key Insight
+
+Churn prediction is not just modeling --- it is a business decision
+problem.
+
+------------------------------------------------------------------------
+
+##  Future Work
+
+-   Deploy API
+-   Add SHAP explainability
+-   Build dashboard
+
+------------------------------------------------------------------------
+
